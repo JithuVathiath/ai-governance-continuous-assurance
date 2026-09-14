@@ -1,0 +1,1177 @@
+{
+  "schema_version": "1.0.0",
+  "assessment_id": "asg-2e27729303f3427e",
+  "generated_at": "2026-09-13T12:00:00Z",
+  "system": {
+    "id": "credit-access-score",
+    "name": "Consumer Credit Access Score",
+    "version": "3.2",
+    "owner": "Retail Credit Risk",
+    "role": "provider",
+    "domain": "creditworthiness",
+    "lifecycle_stage": "production",
+    "intended_purpose": "Recommend credit application risk bands for a trained underwriter who makes the final decision.",
+    "decision_impact": "Influences access to consumer credit and pricing review.",
+    "geographies": [
+      "EU"
+    ],
+    "capabilities": [
+      "classification",
+      "automated_recommendation"
+    ],
+    "risk_factors": [
+      "fundamental_rights",
+      "proxy_discrimination"
+    ],
+    "data_sensitivity": [
+      "financial_data",
+      "personal_data"
+    ],
+    "affected_groups": [
+      "credit applicants",
+      "underwriters"
+    ],
+    "declared_risk_tier": "high",
+    "deployment_date": "2025-11-03"
+  },
+  "classification": {
+    "tier": "high",
+    "reasons": [
+      "Domain \"creditworthiness\" is routed to the high-impact control set."
+    ],
+    "declared_tier": "high",
+    "declaration_mismatch": false
+  },
+  "policy_versions": [
+    {
+      "pack_id": "eu-ai-act-2026",
+      "framework": "EU AI Act",
+      "version": "2026.09",
+      "as_of": "2026-09-13",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "pack_sha256": "f710a9889c9cfe60abfa1a0c3ef255487725f737ee7d3bb4b9b2b0e6e0cb198b"
+    },
+    {
+      "pack_id": "iso-42001-alignment",
+      "framework": "ISO/IEC 42001 Alignment",
+      "version": "2023-high-level",
+      "as_of": "2026-09-13",
+      "source_url": "https://www.iso.org/standard/42001",
+      "pack_sha256": "8ff9afd356a3433d4e0e494a127eb0862f89e88192fab65f3de2079ab771cd0a"
+    },
+    {
+      "pack_id": "nist-ai-rmf-1.0",
+      "framework": "NIST AI RMF",
+      "version": "1.0",
+      "as_of": "2026-09-13",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "pack_sha256": "994a503d302f61e94b4019b6b99286ddf443370db673e118206c90af30db511d"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "CR-001",
+      "type": "ai_policy",
+      "title": "Credit AI Governance Policy",
+      "status": "approved",
+      "owner": "Model Risk Committee",
+      "artifact": "evidence/governance.md",
+      "sha256": "e14595dce40127b87e86365871e00045d8c1c10093c7deec266603d466134397",
+      "collected_at": "2026-07-01",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-002",
+      "type": "impact_assessment",
+      "title": "Borrower Impact Assessment",
+      "status": "approved",
+      "owner": "Consumer Duty Lead",
+      "artifact": "evidence/impact.md",
+      "sha256": "7c94dd4ee0f54a71f7f6b296dfb803e88a2982ee311a379747ffd727e26a1863",
+      "collected_at": "2026-08-01",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-003",
+      "type": "risk_assessment",
+      "title": "Model Risk Assessment",
+      "status": "approved",
+      "owner": "Independent Model Risk",
+      "artifact": "evidence/risk.md",
+      "sha256": "3b309c01ca1e256bfb61500419a4a6bf19194a4d618f5e28dd4aad245fc0831c",
+      "collected_at": "2026-08-15",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-004",
+      "type": "risk_treatment",
+      "title": "Risk Treatment Record",
+      "status": "approved",
+      "owner": "Retail Credit Risk",
+      "artifact": "evidence/risk.md",
+      "sha256": "3b309c01ca1e256bfb61500419a4a6bf19194a4d618f5e28dd4aad245fc0831c",
+      "collected_at": "2026-08-15",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-005",
+      "type": "data_card",
+      "title": "Credit Data Card",
+      "status": "approved",
+      "owner": "Credit Data Office",
+      "artifact": "evidence/data.md",
+      "sha256": "c7ee41c04f50b873017c5679219c58d6fb48365ca9d269294be416e60b6e58d7",
+      "collected_at": "2026-08-20",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-006",
+      "type": "bias_test",
+      "title": "Fair-Lending Validation",
+      "status": "in-review",
+      "owner": "Independent Model Risk",
+      "artifact": "evidence/validation.md",
+      "sha256": "7b321463c3506b7d69760b1cd69db5243696c4aa1de221c0a26e19870ef93662",
+      "collected_at": "2026-09-12",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-007",
+      "type": "performance_test",
+      "title": "Performance and Calibration Test",
+      "status": "approved",
+      "owner": "Independent Model Risk",
+      "artifact": "evidence/validation.md",
+      "sha256": "7b321463c3506b7d69760b1cd69db5243696c4aa1de221c0a26e19870ef93662",
+      "collected_at": "2026-09-10",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-008",
+      "type": "technical_documentation",
+      "title": "Technical Model File",
+      "status": "approved",
+      "owner": "Model Development",
+      "artifact": "evidence/technical.md",
+      "sha256": "9235e3d20f15607f208af124a21799f8dbe1435af4e15b424a33a1b1bb4454fb",
+      "collected_at": "2026-08-30",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-009",
+      "type": "audit_log_sample",
+      "title": "Decision Audit Sample",
+      "status": "approved",
+      "owner": "Credit Operations",
+      "artifact": "evidence/operations.md",
+      "sha256": "adcb1f66e6c19cc65773f8902c7a13270cb3f283ea3dfb48a899a32a060a8463",
+      "collected_at": "2026-09-05",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-010",
+      "type": "instructions_for_use",
+      "title": "Underwriter Operating Guide",
+      "status": "approved",
+      "owner": "Credit Operations",
+      "artifact": "evidence/oversight.md",
+      "sha256": "ba48247609688ffdd18fcecbf136ce5aab8d94a1053ca8fa5a05499bf88ba055",
+      "collected_at": "2026-08-25",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-011",
+      "type": "appeals_process",
+      "title": "Manual Review and Appeal Process",
+      "status": "approved",
+      "owner": "Customer Outcomes",
+      "artifact": "evidence/oversight.md",
+      "sha256": "ba48247609688ffdd18fcecbf136ce5aab8d94a1053ca8fa5a05499bf88ba055",
+      "collected_at": "2026-08-25",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-012",
+      "type": "security_assessment",
+      "title": "Security and Resilience Review",
+      "status": "approved",
+      "owner": "Information Security",
+      "artifact": "evidence/security.md",
+      "sha256": "8b982b2c6f2db8a818f422c5d7a91df30ef70053bb072566b1cabf30513981b3",
+      "collected_at": "2026-08-28",
+      "valid_until": "2027-08-28",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-013",
+      "type": "monitoring_plan",
+      "title": "Outcome Monitoring Plan",
+      "status": "approved",
+      "owner": "Model Monitoring",
+      "artifact": "evidence/operations.md",
+      "sha256": "adcb1f66e6c19cc65773f8902c7a13270cb3f283ea3dfb48a899a32a060a8463",
+      "collected_at": "2026-09-01",
+      "integrity": "verified"
+    },
+    {
+      "id": "CR-014",
+      "type": "incident_response",
+      "title": "Model Incident Playbook",
+      "status": "approved",
+      "owner": "Operational Risk",
+      "artifact": "evidence/operations.md",
+      "sha256": "adcb1f66e6c19cc65773f8902c7a13270cb3f283ea3dfb48a899a32a060a8463",
+      "collected_at": "2026-09-01",
+      "integrity": "verified"
+    }
+  ],
+  "controls": [
+    {
+      "id": "AIA-04",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Prohibited-Practice Escalation",
+      "source_ref": "Article 5",
+      "severity": "critical",
+      "applicable": false,
+      "status": "not-applicable",
+      "reason": "Applicability conditions did not match the assessed system.",
+      "requirements": null
+    },
+    {
+      "id": "AIA-09",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Lifecycle Risk Management",
+      "source_ref": "Article 9",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "risk-record",
+          "title": "Approved risk assessment and treatment",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-003",
+            "CR-004"
+          ],
+          "reason": "2 verified, approved evidence item(s) satisfy the minimum of 2."
+        }
+      ]
+    },
+    {
+      "id": "AIA-10",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Data Governance",
+      "source_ref": "Article 10",
+      "severity": "high",
+      "applicable": true,
+      "status": "partial",
+      "reason": "At least one requirement has draft or insufficient approved evidence.",
+      "requirements": [
+        {
+          "id": "data-governance",
+          "title": "Data governance evidence",
+          "status": "partial",
+          "evidence_ids": [
+            "CR-005",
+            "CR-006"
+          ],
+          "reason": "Evidence exists but only 1 of 2 required item(s) are verified and approved."
+        }
+      ]
+    },
+    {
+      "id": "AIA-11",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Technical Documentation",
+      "source_ref": "Article 11",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "technical-file",
+          "title": "Approved model and system documentation",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-008"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "AIA-12",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Event Logging",
+      "source_ref": "Article 12",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "logging",
+          "title": "Logging design and sample",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-009"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "AIA-13",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Instructions and Transparency",
+      "source_ref": "Article 13",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "instructions",
+          "title": "Approved user instructions",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-010"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "AIA-14",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Human Oversight",
+      "source_ref": "Article 14",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "oversight",
+          "title": "Human-oversight procedure",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-011"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "AIA-15",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "Accuracy, Robustness, and Cybersecurity",
+      "source_ref": "Article 15",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "performance",
+          "title": "Performance and robustness evaluation",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-007"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        },
+        {
+          "id": "security",
+          "title": "Current security assessment",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-012"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "AIA-50-I",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "AI Interaction Transparency",
+      "source_ref": "Article 50",
+      "severity": "medium",
+      "applicable": false,
+      "status": "not-applicable",
+      "reason": "Applicability conditions did not match the assessed system.",
+      "requirements": null
+    },
+    {
+      "id": "AIA-50-C",
+      "framework": "EU AI Act",
+      "pack_id": "eu-ai-act-2026",
+      "title": "AI-Generated Content Provenance",
+      "source_ref": "Article 50",
+      "severity": "medium",
+      "applicable": false,
+      "status": "not-applicable",
+      "reason": "Applicability conditions did not match the assessed system.",
+      "requirements": null
+    },
+    {
+      "id": "AIMS-LEAD",
+      "framework": "ISO/IEC 42001 Alignment",
+      "pack_id": "iso-42001-alignment",
+      "title": "AI Policy and Accountability",
+      "source_ref": "High-level leadership alignment",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "leadership",
+          "title": "Policy and accountability",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-001"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "AIMS-RISK",
+      "framework": "ISO/IEC 42001 Alignment",
+      "pack_id": "iso-42001-alignment",
+      "title": "Impact and Risk Process",
+      "source_ref": "High-level planning alignment",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "risk-process",
+          "title": "Impact, risk, and treatment records",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-002",
+            "CR-003",
+            "CR-004"
+          ],
+          "reason": "3 verified, approved evidence item(s) satisfy the minimum of 2."
+        }
+      ]
+    },
+    {
+      "id": "AIMS-LIFE",
+      "framework": "ISO/IEC 42001 Alignment",
+      "pack_id": "iso-42001-alignment",
+      "title": "Lifecycle and Supplier Governance",
+      "source_ref": "High-level operational alignment",
+      "severity": "medium",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "lifecycle",
+          "title": "Lifecycle or supplier controls",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-008"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "AIMS-IMPROVE",
+      "framework": "ISO/IEC 42001 Alignment",
+      "pack_id": "iso-42001-alignment",
+      "title": "Monitoring and Continual Improvement",
+      "source_ref": "High-level performance and improvement alignment",
+      "severity": "medium",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "improvement",
+          "title": "Monitoring and improvement evidence",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-013",
+            "CR-014"
+          ],
+          "reason": "2 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "GOVERN-1",
+      "framework": "NIST AI RMF",
+      "pack_id": "nist-ai-rmf-1.0",
+      "title": "Accountability and Governance",
+      "source_ref": "GOVERN function",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "accountability",
+          "title": "Accountability and policy evidence",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-001"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "MAP-1",
+      "framework": "NIST AI RMF",
+      "pack_id": "nist-ai-rmf-1.0",
+      "title": "Context and Impact Mapping",
+      "source_ref": "MAP function",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "impact",
+          "title": "Impact and stakeholder analysis",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-002"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "MEASURE-1",
+      "framework": "NIST AI RMF",
+      "pack_id": "nist-ai-rmf-1.0",
+      "title": "Independent Measurement",
+      "source_ref": "MEASURE function",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "testing",
+          "title": "Performance and risk testing",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-006",
+            "CR-007"
+          ],
+          "reason": "1 verified, approved evidence item(s) satisfy the minimum of 1."
+        }
+      ]
+    },
+    {
+      "id": "MANAGE-1",
+      "framework": "NIST AI RMF",
+      "pack_id": "nist-ai-rmf-1.0",
+      "title": "Risk Treatment and Monitoring",
+      "source_ref": "MANAGE function",
+      "severity": "high",
+      "applicable": true,
+      "status": "supported",
+      "reason": "Every requirement has sufficient verified, approved evidence.",
+      "requirements": [
+        {
+          "id": "operations",
+          "title": "Treatment and monitoring evidence",
+          "status": "supported",
+          "evidence_ids": [
+            "CR-004",
+            "CR-013",
+            "CR-014"
+          ],
+          "reason": "3 verified, approved evidence item(s) satisfy the minimum of 2."
+        }
+      ]
+    },
+    {
+      "id": "GAI-1",
+      "framework": "NIST AI RMF",
+      "pack_id": "nist-ai-rmf-1.0",
+      "title": "Generative-AI Content Provenance",
+      "source_ref": "Generative AI Profile",
+      "severity": "high",
+      "applicable": false,
+      "status": "not-applicable",
+      "reason": "Applicability conditions did not match the assessed system.",
+      "requirements": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "eu-ai-act-2026-aia-10-partial",
+      "control_id": "AIA-10",
+      "framework": "EU AI Act",
+      "severity": "high",
+      "status": "partial",
+      "title": "Data Governance: partial",
+      "message": "At least one requirement has draft or insufficient approved evidence."
+    }
+  ],
+  "summary": {
+    "applicable": 15,
+    "supported": 14,
+    "partial": 1,
+    "missing": 0,
+    "expired": 0,
+    "evidence_coverage_percent": 93.3,
+    "decision": "hold"
+  },
+  "evidence_graph": {
+    "nodes": [
+      {
+        "id": "system:credit-access-score",
+        "type": "system",
+        "label": "Consumer Credit Access Score"
+      },
+      {
+        "id": "framework:eu-ai-act-2026",
+        "type": "framework",
+        "label": "EU AI Act 2026.09"
+      },
+      {
+        "id": "control:eu-ai-act-2026:AIA-09",
+        "type": "control",
+        "label": "Lifecycle Risk Management",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-003",
+        "type": "evidence",
+        "label": "Model Risk Assessment",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "3b309c01ca1e256bfb61500419a4a6bf19194a4d618f5e28dd4aad245fc0831c",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "evidence:CR-004",
+        "type": "evidence",
+        "label": "Risk Treatment Record",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "3b309c01ca1e256bfb61500419a4a6bf19194a4d618f5e28dd4aad245fc0831c",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "control:eu-ai-act-2026:AIA-10",
+        "type": "control",
+        "label": "Data Governance",
+        "meta": {
+          "severity": "high",
+          "status": "partial"
+        }
+      },
+      {
+        "id": "evidence:CR-005",
+        "type": "evidence",
+        "label": "Credit Data Card",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "c7ee41c04f50b873017c5679219c58d6fb48365ca9d269294be416e60b6e58d7",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "evidence:CR-006",
+        "type": "evidence",
+        "label": "Fair-Lending Validation",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "7b321463c3506b7d69760b1cd69db5243696c4aa1de221c0a26e19870ef93662",
+          "status": "in-review"
+        }
+      },
+      {
+        "id": "finding:eu-ai-act-2026-aia-10-partial",
+        "type": "finding",
+        "label": "Data Governance: partial",
+        "meta": {
+          "severity": "high",
+          "status": "partial"
+        }
+      },
+      {
+        "id": "control:eu-ai-act-2026:AIA-11",
+        "type": "control",
+        "label": "Technical Documentation",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-008",
+        "type": "evidence",
+        "label": "Technical Model File",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "9235e3d20f15607f208af124a21799f8dbe1435af4e15b424a33a1b1bb4454fb",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "control:eu-ai-act-2026:AIA-12",
+        "type": "control",
+        "label": "Event Logging",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-009",
+        "type": "evidence",
+        "label": "Decision Audit Sample",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "adcb1f66e6c19cc65773f8902c7a13270cb3f283ea3dfb48a899a32a060a8463",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "control:eu-ai-act-2026:AIA-13",
+        "type": "control",
+        "label": "Instructions and Transparency",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-010",
+        "type": "evidence",
+        "label": "Underwriter Operating Guide",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "ba48247609688ffdd18fcecbf136ce5aab8d94a1053ca8fa5a05499bf88ba055",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "control:eu-ai-act-2026:AIA-14",
+        "type": "control",
+        "label": "Human Oversight",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-011",
+        "type": "evidence",
+        "label": "Manual Review and Appeal Process",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "ba48247609688ffdd18fcecbf136ce5aab8d94a1053ca8fa5a05499bf88ba055",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "control:eu-ai-act-2026:AIA-15",
+        "type": "control",
+        "label": "Accuracy, Robustness, and Cybersecurity",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-007",
+        "type": "evidence",
+        "label": "Performance and Calibration Test",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "7b321463c3506b7d69760b1cd69db5243696c4aa1de221c0a26e19870ef93662",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "evidence:CR-012",
+        "type": "evidence",
+        "label": "Security and Resilience Review",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "8b982b2c6f2db8a818f422c5d7a91df30ef70053bb072566b1cabf30513981b3",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "framework:iso-42001-alignment",
+        "type": "framework",
+        "label": "ISO/IEC 42001 Alignment 2023-high-level"
+      },
+      {
+        "id": "control:iso-42001-alignment:AIMS-LEAD",
+        "type": "control",
+        "label": "AI Policy and Accountability",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-001",
+        "type": "evidence",
+        "label": "Credit AI Governance Policy",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "e14595dce40127b87e86365871e00045d8c1c10093c7deec266603d466134397",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "control:iso-42001-alignment:AIMS-RISK",
+        "type": "control",
+        "label": "Impact and Risk Process",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-002",
+        "type": "evidence",
+        "label": "Borrower Impact Assessment",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "7c94dd4ee0f54a71f7f6b296dfb803e88a2982ee311a379747ffd727e26a1863",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "control:iso-42001-alignment:AIMS-LIFE",
+        "type": "control",
+        "label": "Lifecycle and Supplier Governance",
+        "meta": {
+          "severity": "medium",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "control:iso-42001-alignment:AIMS-IMPROVE",
+        "type": "control",
+        "label": "Monitoring and Continual Improvement",
+        "meta": {
+          "severity": "medium",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "evidence:CR-013",
+        "type": "evidence",
+        "label": "Outcome Monitoring Plan",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "adcb1f66e6c19cc65773f8902c7a13270cb3f283ea3dfb48a899a32a060a8463",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "evidence:CR-014",
+        "type": "evidence",
+        "label": "Model Incident Playbook",
+        "meta": {
+          "integrity": "verified",
+          "sha256": "adcb1f66e6c19cc65773f8902c7a13270cb3f283ea3dfb48a899a32a060a8463",
+          "status": "approved"
+        }
+      },
+      {
+        "id": "framework:nist-ai-rmf-1.0",
+        "type": "framework",
+        "label": "NIST AI RMF 1.0"
+      },
+      {
+        "id": "control:nist-ai-rmf-1.0:GOVERN-1",
+        "type": "control",
+        "label": "Accountability and Governance",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "control:nist-ai-rmf-1.0:MAP-1",
+        "type": "control",
+        "label": "Context and Impact Mapping",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "control:nist-ai-rmf-1.0:MEASURE-1",
+        "type": "control",
+        "label": "Independent Measurement",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      },
+      {
+        "id": "control:nist-ai-rmf-1.0:MANAGE-1",
+        "type": "control",
+        "label": "Risk Treatment and Monitoring",
+        "meta": {
+          "severity": "high",
+          "status": "supported"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "system:credit-access-score",
+        "to": "framework:eu-ai-act-2026",
+        "relation": "assessed_against"
+      },
+      {
+        "from": "framework:eu-ai-act-2026",
+        "to": "control:eu-ai-act-2026:AIA-09",
+        "relation": "defines"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-09",
+        "to": "evidence:CR-003",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-09",
+        "to": "evidence:CR-004",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:eu-ai-act-2026",
+        "to": "control:eu-ai-act-2026:AIA-10",
+        "relation": "defines"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-10",
+        "to": "evidence:CR-005",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-10",
+        "to": "evidence:CR-006",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-10",
+        "to": "finding:eu-ai-act-2026-aia-10-partial",
+        "relation": "raises"
+      },
+      {
+        "from": "framework:eu-ai-act-2026",
+        "to": "control:eu-ai-act-2026:AIA-11",
+        "relation": "defines"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-11",
+        "to": "evidence:CR-008",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:eu-ai-act-2026",
+        "to": "control:eu-ai-act-2026:AIA-12",
+        "relation": "defines"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-12",
+        "to": "evidence:CR-009",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:eu-ai-act-2026",
+        "to": "control:eu-ai-act-2026:AIA-13",
+        "relation": "defines"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-13",
+        "to": "evidence:CR-010",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:eu-ai-act-2026",
+        "to": "control:eu-ai-act-2026:AIA-14",
+        "relation": "defines"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-14",
+        "to": "evidence:CR-011",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:eu-ai-act-2026",
+        "to": "control:eu-ai-act-2026:AIA-15",
+        "relation": "defines"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-15",
+        "to": "evidence:CR-007",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:eu-ai-act-2026:AIA-15",
+        "to": "evidence:CR-012",
+        "relation": "supported_by"
+      },
+      {
+        "from": "system:credit-access-score",
+        "to": "framework:iso-42001-alignment",
+        "relation": "assessed_against"
+      },
+      {
+        "from": "framework:iso-42001-alignment",
+        "to": "control:iso-42001-alignment:AIMS-LEAD",
+        "relation": "defines"
+      },
+      {
+        "from": "control:iso-42001-alignment:AIMS-LEAD",
+        "to": "evidence:CR-001",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:iso-42001-alignment",
+        "to": "control:iso-42001-alignment:AIMS-RISK",
+        "relation": "defines"
+      },
+      {
+        "from": "control:iso-42001-alignment:AIMS-RISK",
+        "to": "evidence:CR-002",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:iso-42001-alignment:AIMS-RISK",
+        "to": "evidence:CR-003",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:iso-42001-alignment:AIMS-RISK",
+        "to": "evidence:CR-004",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:iso-42001-alignment",
+        "to": "control:iso-42001-alignment:AIMS-LIFE",
+        "relation": "defines"
+      },
+      {
+        "from": "control:iso-42001-alignment:AIMS-LIFE",
+        "to": "evidence:CR-008",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:iso-42001-alignment",
+        "to": "control:iso-42001-alignment:AIMS-IMPROVE",
+        "relation": "defines"
+      },
+      {
+        "from": "control:iso-42001-alignment:AIMS-IMPROVE",
+        "to": "evidence:CR-013",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:iso-42001-alignment:AIMS-IMPROVE",
+        "to": "evidence:CR-014",
+        "relation": "supported_by"
+      },
+      {
+        "from": "system:credit-access-score",
+        "to": "framework:nist-ai-rmf-1.0",
+        "relation": "assessed_against"
+      },
+      {
+        "from": "framework:nist-ai-rmf-1.0",
+        "to": "control:nist-ai-rmf-1.0:GOVERN-1",
+        "relation": "defines"
+      },
+      {
+        "from": "control:nist-ai-rmf-1.0:GOVERN-1",
+        "to": "evidence:CR-001",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:nist-ai-rmf-1.0",
+        "to": "control:nist-ai-rmf-1.0:MAP-1",
+        "relation": "defines"
+      },
+      {
+        "from": "control:nist-ai-rmf-1.0:MAP-1",
+        "to": "evidence:CR-002",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:nist-ai-rmf-1.0",
+        "to": "control:nist-ai-rmf-1.0:MEASURE-1",
+        "relation": "defines"
+      },
+      {
+        "from": "control:nist-ai-rmf-1.0:MEASURE-1",
+        "to": "evidence:CR-006",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:nist-ai-rmf-1.0:MEASURE-1",
+        "to": "evidence:CR-007",
+        "relation": "supported_by"
+      },
+      {
+        "from": "framework:nist-ai-rmf-1.0",
+        "to": "control:nist-ai-rmf-1.0:MANAGE-1",
+        "relation": "defines"
+      },
+      {
+        "from": "control:nist-ai-rmf-1.0:MANAGE-1",
+        "to": "evidence:CR-004",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:nist-ai-rmf-1.0:MANAGE-1",
+        "to": "evidence:CR-013",
+        "relation": "supported_by"
+      },
+      {
+        "from": "control:nist-ai-rmf-1.0:MANAGE-1",
+        "to": "evidence:CR-014",
+        "relation": "supported_by"
+      }
+    ]
+  },
+  "ledger": {
+    "sequence": 3,
+    "event_hash": "733693ea344db8ada741ed7e420683a29963538f1e8319f164080a2dcd68f1f6",
+    "previous_hash": "c40b244dcf2a4216a9a0c29982d8043326e69772a65a8fa9299c6b8f19505a6c",
+    "payload_hash": "27dddeae794ce0d890d5b3e60dfd95e968c250f7f773671d66197e5013fc1684"
+  },
+  "disclaimer": "Aegis reports evidence readiness and traceability. It is not a legal opinion, certification, or determination of regulatory compliance."
+}

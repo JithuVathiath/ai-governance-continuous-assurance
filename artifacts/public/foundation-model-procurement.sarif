@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/foundation-model-procurement/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has draft or insufficient approved evidence."
+          },
+          "ruleId": "iso-42001-alignment-aims-life-partial"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "informationUri": "https://github.com/JithuVathiath/ai-governance-continuous-assurance",
+          "name": "Aegis Continuous Assurance",
+          "rules": [
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "iso-42001-alignment-aims-life-partial",
+              "properties": {
+                "framework": "ISO/IEC 42001 Alignment",
+                "severity": "medium"
+              },
+              "shortDescription": {
+                "text": "Lifecycle and Supplier Governance: partial"
+              }
+            }
+          ],
+          "version": "0.1.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

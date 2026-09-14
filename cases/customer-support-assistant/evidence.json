@@ -1,0 +1,17 @@
+{
+  "system_id": "helpdesk-answer-assistant",
+  "version": "1.4",
+  "items": [
+    {"id": "CS-001", "type": "accountability_matrix", "title": "Assistant Accountability Matrix", "status": "approved", "owner": "AI Product Council", "artifact": "evidence/governance.md", "sha256": "auto", "collected_at": "2026-08-01"},
+    {"id": "CS-002", "type": "impact_assessment", "title": "Customer Impact Assessment", "status": "approved", "owner": "Customer Outcomes", "artifact": "evidence/impact-and-risk.md", "sha256": "auto", "collected_at": "2026-08-03"},
+    {"id": "CS-003", "type": "risk_assessment", "title": "Generative AI Risk Assessment", "status": "approved", "owner": "Responsible AI", "artifact": "evidence/impact-and-risk.md", "sha256": "auto", "collected_at": "2026-08-03"},
+    {"id": "CS-004", "type": "risk_treatment", "title": "Generative AI Treatment Plan", "status": "approved", "owner": "AI Product Council", "artifact": "evidence/impact-and-risk.md", "sha256": "auto", "collected_at": "2026-08-05"},
+    {"id": "CS-005", "type": "performance_test", "title": "Groundedness Evaluation", "status": "approved", "owner": "AI Quality", "artifact": "evidence/evaluation.md", "sha256": "auto", "collected_at": "2026-09-01"},
+    {"id": "CS-006", "type": "red_team_report", "title": "Safety Red-Team Report", "status": "approved", "owner": "AI Security", "artifact": "evidence/evaluation.md", "sha256": "auto", "collected_at": "2026-09-02"},
+    {"id": "CS-007", "type": "content_provenance", "title": "Answer Provenance Design", "status": "approved", "owner": "AI Engineering", "artifact": "evidence/transparency.md", "sha256": "auto", "collected_at": "2026-08-30"},
+    {"id": "CS-008", "type": "transparency_notice", "title": "Customer AI Disclosure", "status": "approved", "owner": "Customer Experience", "artifact": "evidence/transparency.md", "sha256": "auto", "collected_at": "2026-08-30"},
+    {"id": "CS-009", "type": "monitoring_plan", "title": "Quality and Safety Monitoring", "status": "approved", "owner": "AI Operations", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-08-29"},
+    {"id": "CS-010", "type": "incident_response", "title": "AI Incident Playbook", "status": "approved", "owner": "AI Operations", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-08-29"},
+    {"id": "CS-011", "type": "supplier_assessment", "title": "Model Service Supplier Review", "status": "approved", "owner": "Third-Party Risk", "artifact": "evidence/supplier.md", "sha256": "auto", "collected_at": "2026-08-20"}
+  ]
+}

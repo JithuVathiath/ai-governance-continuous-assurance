@@ -1,0 +1,19 @@
+{
+  "id": "helpdesk-answer-assistant",
+  "name": "Customer Support Answer Assistant",
+  "version": "1.4",
+  "owner": "Customer Experience",
+  "role": "deployer",
+  "domain": "customer_support",
+  "lifecycle_stage": "production",
+  "intended_purpose": "Draft grounded customer-support answers from an approved knowledge base with agent review for sensitive topics.",
+  "decision_impact": "Provides service information but cannot approve claims, credit, or account restrictions.",
+  "geographies": ["EU", "UK"],
+  "capabilities": ["conversational_agent", "content_generation", "retrieval_augmented_generation"],
+  "risk_factors": ["hallucination", "prompt_injection", "data_disclosure"],
+  "data_sensitivity": ["customer_messages"],
+  "affected_groups": ["customers", "support agents"],
+  "declared_risk_tier": "transparency",
+  "vendor": "Example Language Model Service",
+  "deployment_date": "2026-06-18"
+}

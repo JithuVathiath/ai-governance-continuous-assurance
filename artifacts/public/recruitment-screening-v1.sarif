@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v1/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has draft or insufficient approved evidence."
+          },
+          "ruleId": "eu-ai-act-2026-aia-09-partial"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v1/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has draft or insufficient approved evidence."
+          },
+          "ruleId": "eu-ai-act-2026-aia-10-partial"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v1/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has draft or insufficient approved evidence."
+          },
+          "ruleId": "eu-ai-act-2026-aia-12-partial"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v1/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has no matching evidence."
+          },
+          "ruleId": "eu-ai-act-2026-aia-13-missing"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v1/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement relies only on expired evidence."
+          },
+          "ruleId": "eu-ai-act-2026-aia-15-expired"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v1/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has draft or insufficient approved evidence."
+          },
+          "ruleId": "iso-42001-alignment-aims-improve-partial"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v1/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has draft or insufficient approved evidence."
+          },
+          "ruleId": "nist-ai-rmf-1.0-manage-1-partial"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "informationUri": "https://github.com/JithuVathiath/ai-governance-continuous-assurance",
+          "name": "Aegis Continuous Assurance",
+          "rules": [
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "eu-ai-act-2026-aia-09-partial",
+              "properties": {
+                "framework": "EU AI Act",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Lifecycle Risk Management: partial"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "eu-ai-act-2026-aia-10-partial",
+              "properties": {
+                "framework": "EU AI Act",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Data Governance: partial"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "eu-ai-act-2026-aia-12-partial",
+              "properties": {
+                "framework": "EU AI Act",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Event Logging: partial"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "eu-ai-act-2026-aia-13-missing",
+              "properties": {
+                "framework": "EU AI Act",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Instructions and Transparency: missing"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "eu-ai-act-2026-aia-15-expired",
+              "properties": {
+                "framework": "EU AI Act",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Accuracy, Robustness, and Cybersecurity: expired"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "iso-42001-alignment-aims-improve-partial",
+              "properties": {
+                "framework": "ISO/IEC 42001 Alignment",
+                "severity": "medium"
+              },
+              "shortDescription": {
+                "text": "Monitoring and Continual Improvement: partial"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "nist-ai-rmf-1.0-manage-1-partial",
+              "properties": {
+                "framework": "NIST AI RMF",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Risk Treatment and Monitoring: partial"
+              }
+            }
+          ],
+          "version": "0.1.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

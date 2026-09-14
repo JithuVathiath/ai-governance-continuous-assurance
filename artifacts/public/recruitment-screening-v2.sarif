@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v2/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has no matching evidence."
+          },
+          "ruleId": "eu-ai-act-2026-aia-50-c-missing"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v2/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has draft or insufficient approved evidence."
+          },
+          "ruleId": "nist-ai-rmf-1.0-map-1-partial"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cases/recruitment-screening-v2/system.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "At least one requirement has no matching evidence."
+          },
+          "ruleId": "nist-ai-rmf-1.0-gai-1-missing"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "informationUri": "https://github.com/JithuVathiath/ai-governance-continuous-assurance",
+          "name": "Aegis Continuous Assurance",
+          "rules": [
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "eu-ai-act-2026-aia-50-c-missing",
+              "properties": {
+                "framework": "EU AI Act",
+                "severity": "medium"
+              },
+              "shortDescription": {
+                "text": "AI-Generated Content Provenance: missing"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "nist-ai-rmf-1.0-map-1-partial",
+              "properties": {
+                "framework": "NIST AI RMF",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Context and Impact Mapping: partial"
+              }
+            },
+            {
+              "help": {
+                "text": "Supply reviewed evidence and obtain independent governance approval."
+              },
+              "id": "nist-ai-rmf-1.0-gai-1-missing",
+              "properties": {
+                "framework": "NIST AI RMF",
+                "severity": "high"
+              },
+              "shortDescription": {
+                "text": "Generative-AI Content Provenance: missing"
+              }
+            }
+          ],
+          "version": "0.1.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}
