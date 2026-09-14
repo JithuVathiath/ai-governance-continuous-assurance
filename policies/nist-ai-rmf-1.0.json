@@ -1,0 +1,58 @@
+{
+  "id": "nist-ai-rmf-1.0",
+  "framework": "NIST AI RMF",
+  "version": "1.0",
+  "as_of": "2026-09-13",
+  "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+  "disclaimer": "Aegis maps public NIST AI RMF concepts for evidence readiness; it is not a NIST assessment or endorsement.",
+  "rules": [
+    {
+      "id": "GOVERN-1",
+      "title": "Accountability and Governance",
+      "description": "Establish ownership, policy, and decision accountability.",
+      "source_ref": "GOVERN function",
+      "severity": "high",
+      "applicable_when": {},
+      "requirements": [{"id": "accountability", "title": "Accountability and policy evidence", "evidence_types": ["accountability_matrix", "ai_policy"], "minimum": 1}]
+    },
+    {
+      "id": "MAP-1",
+      "title": "Context and Impact Mapping",
+      "description": "Document intended context, affected groups, impacts, and boundaries.",
+      "source_ref": "MAP function",
+      "severity": "high",
+      "applicable_when": {},
+      "requirements": [{"id": "impact", "title": "Impact and stakeholder analysis", "evidence_types": ["impact_assessment", "stakeholder_analysis"], "minimum": 1}]
+    },
+    {
+      "id": "MEASURE-1",
+      "title": "Independent Measurement",
+      "description": "Test performance and harmful-impact risks with documented methods.",
+      "source_ref": "MEASURE function",
+      "severity": "high",
+      "applicable_when": {},
+      "requirements": [{"id": "testing", "title": "Performance and risk testing", "evidence_types": ["performance_test", "bias_test", "robustness_test", "red_team_report"], "minimum": 1}]
+    },
+    {
+      "id": "MANAGE-1",
+      "title": "Risk Treatment and Monitoring",
+      "description": "Track risk treatment, monitoring, response, and residual-risk decisions.",
+      "source_ref": "MANAGE function",
+      "severity": "high",
+      "applicable_when": {},
+      "requirements": [{"id": "operations", "title": "Treatment and monitoring evidence", "evidence_types": ["risk_treatment", "monitoring_plan", "incident_response"], "minimum": 2}]
+    },
+    {
+      "id": "GAI-1",
+      "title": "Generative-AI Content Provenance",
+      "description": "Test generative-system misuse and preserve content provenance.",
+      "source_ref": "Generative AI Profile",
+      "severity": "high",
+      "applicable_when": {"capabilities": ["content_generation", "conversational_agent"]},
+      "requirements": [
+        {"id": "red-team", "title": "Adversarial evaluation", "evidence_types": ["red_team_report"], "minimum": 1},
+        {"id": "provenance", "title": "Content provenance control", "evidence_types": ["content_provenance"], "minimum": 1}
+      ]
+    }
+  ]
+}

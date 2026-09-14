@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JithuVathiath/ai-governance-continuous-assurance/schemas/evidence-bundle.schema.json",
+  "title": "Aegis Evidence Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["system_id", "version", "items"],
+  "properties": {
+    "system_id": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "title", "status", "owner", "artifact", "sha256", "collected_at"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "type": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1},
+          "status": {"enum": ["approved", "in-review", "draft", "rejected"]},
+          "owner": {"type": "string", "minLength": 1},
+          "artifact": {"type": "string", "minLength": 1},
+          "sha256": {"anyOf": [{"const": "auto"}, {"type": "string", "pattern": "^[a-f0-9]{64}$"}]},
+          "collected_at": {"type": "string", "format": "date"},
+          "valid_until": {"type": "string", "format": "date"},
+          "integrity": {"type": "string"}
+        }
+      }
+    }
+  }
+}
