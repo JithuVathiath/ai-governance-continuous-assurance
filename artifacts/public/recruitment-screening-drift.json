@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "system_id": "talent-match-assistant",
+  "before_assessment": "asg-a48809c62b6df35e",
+  "after_assessment": "asg-d72abd990536049a",
+  "before_tier": "high",
+  "after_tier": "high",
+  "new_controls": 2,
+  "resolved_controls": 7,
+  "regressed_controls": 1,
+  "changed_controls": 0,
+  "items": [
+    {
+      "key": "eu-ai-act-2026:AIA-09",
+      "framework": "EU AI Act",
+      "control_id": "AIA-09",
+      "title": "Lifecycle Risk Management",
+      "before": "partial",
+      "after": "supported",
+      "change_type": "resolved",
+      "severity": "high"
+    },
+    {
+      "key": "eu-ai-act-2026:AIA-10",
+      "framework": "EU AI Act",
+      "control_id": "AIA-10",
+      "title": "Data Governance",
+      "before": "partial",
+      "after": "supported",
+      "change_type": "resolved",
+      "severity": "high"
+    },
+    {
+      "key": "eu-ai-act-2026:AIA-12",
+      "framework": "EU AI Act",
+      "control_id": "AIA-12",
+      "title": "Event Logging",
+      "before": "partial",
+      "after": "supported",
+      "change_type": "resolved",
+      "severity": "high"
+    },
+    {
+      "key": "eu-ai-act-2026:AIA-13",
+      "framework": "EU AI Act",
+      "control_id": "AIA-13",
+      "title": "Instructions and Transparency",
+      "before": "missing",
+      "after": "supported",
+      "change_type": "resolved",
+      "severity": "high"
+    },
+    {
+      "key": "eu-ai-act-2026:AIA-15",
+      "framework": "EU AI Act",
+      "control_id": "AIA-15",
+      "title": "Accuracy, Robustness, and Cybersecurity",
+      "before": "expired",
+      "after": "supported",
+      "change_type": "resolved",
+      "severity": "high"
+    },
+    {
+      "key": "eu-ai-act-2026:AIA-50-C",
+      "framework": "EU AI Act",
+      "control_id": "AIA-50-C",
+      "title": "AI-Generated Content Provenance",
+      "before": "out-of-scope",
+      "after": "missing",
+      "change_type": "newly-applicable",
+      "severity": "medium"
+    },
+    {
+      "key": "iso-42001-alignment:AIMS-IMPROVE",
+      "framework": "ISO/IEC 42001 Alignment",
+      "control_id": "AIMS-IMPROVE",
+      "title": "Monitoring and Continual Improvement",
+      "before": "partial",
+      "after": "supported",
+      "change_type": "resolved",
+      "severity": "medium"
+    },
+    {
+      "key": "nist-ai-rmf-1.0:GAI-1",
+      "framework": "NIST AI RMF",
+      "control_id": "GAI-1",
+      "title": "Generative-AI Content Provenance",
+      "before": "out-of-scope",
+      "after": "missing",
+      "change_type": "newly-applicable",
+      "severity": "high"
+    },
+    {
+      "key": "nist-ai-rmf-1.0:MANAGE-1",
+      "framework": "NIST AI RMF",
+      "control_id": "MANAGE-1",
+      "title": "Risk Treatment and Monitoring",
+      "before": "partial",
+      "after": "supported",
+      "change_type": "resolved",
+      "severity": "high"
+    },
+    {
+      "key": "nist-ai-rmf-1.0:MAP-1",
+      "framework": "NIST AI RMF",
+      "control_id": "MAP-1",
+      "title": "Context and Impact Mapping",
+      "before": "supported",
+      "after": "partial",
+      "change_type": "regressed",
+      "severity": "high"
+    }
+  ]
+}

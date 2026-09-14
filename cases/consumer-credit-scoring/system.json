@@ -1,0 +1,18 @@
+{
+  "id": "credit-access-score",
+  "name": "Consumer Credit Access Score",
+  "version": "3.2",
+  "owner": "Retail Credit Risk",
+  "role": "provider",
+  "domain": "creditworthiness",
+  "lifecycle_stage": "production",
+  "intended_purpose": "Recommend credit application risk bands for a trained underwriter who makes the final decision.",
+  "decision_impact": "Influences access to consumer credit and pricing review.",
+  "geographies": ["EU"],
+  "capabilities": ["classification", "automated_recommendation"],
+  "risk_factors": ["fundamental_rights", "proxy_discrimination"],
+  "data_sensitivity": ["financial_data", "personal_data"],
+  "affected_groups": ["credit applicants", "underwriters"],
+  "declared_risk_tier": "high",
+  "deployment_date": "2025-11-03"
+}

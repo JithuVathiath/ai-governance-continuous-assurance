@@ -1,0 +1,18 @@
+{
+  "id": "talent-match-assistant",
+  "name": "Talent Match Assistant",
+  "version": "1.0",
+  "owner": "People Analytics",
+  "role": "provider",
+  "domain": "employment",
+  "lifecycle_stage": "pilot",
+  "intended_purpose": "Prioritise job applications for trained recruiter review; never issue an autonomous employment decision.",
+  "decision_impact": "Influences access to employment interviews.",
+  "geographies": ["EU", "UK"],
+  "capabilities": ["ranking", "automated_recommendation"],
+  "risk_factors": ["fundamental_rights", "selection_bias"],
+  "data_sensitivity": ["personal_data", "employment_history"],
+  "affected_groups": ["job applicants", "recruiters"],
+  "declared_risk_tier": "high",
+  "deployment_date": "2026-10-15"
+}

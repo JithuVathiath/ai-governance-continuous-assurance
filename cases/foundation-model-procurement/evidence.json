@@ -1,0 +1,14 @@
+{
+  "system_id": "enterprise-foundation-model-gateway",
+  "version": "0.8",
+  "items": [
+    {"id": "FM-001", "type": "ai_policy", "title": "Enterprise AI Use Policy", "status": "approved", "owner": "Chief Technology Office", "artifact": "evidence/governance.md", "sha256": "auto", "collected_at": "2026-06-01"},
+    {"id": "FM-002", "type": "impact_assessment", "title": "Gateway Impact Assessment", "status": "approved", "owner": "Responsible AI", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-08-10"},
+    {"id": "FM-003", "type": "risk_assessment", "title": "Third-Party Model Risk Assessment", "status": "approved", "owner": "Technology Risk", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-08-10"},
+    {"id": "FM-004", "type": "risk_treatment", "title": "Gateway Risk Treatment Plan", "status": "approved", "owner": "Technology Strategy", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-08-12"},
+    {"id": "FM-005", "type": "red_team_report", "title": "Comparative Safety Evaluation", "status": "approved", "owner": "AI Security", "artifact": "evidence/evaluation.md", "sha256": "auto", "collected_at": "2026-09-01"},
+    {"id": "FM-006", "type": "monitoring_plan", "title": "Supplier and Model Change Monitoring", "status": "approved", "owner": "AI Platform", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-08-25"},
+    {"id": "FM-007", "type": "incident_response", "title": "Gateway Incident Playbook", "status": "approved", "owner": "AI Platform", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-08-25"},
+    {"id": "FM-008", "type": "supplier_assessment", "title": "Candidate Supplier Due Diligence", "status": "in-review", "owner": "Third-Party Risk", "artifact": "evidence/supplier.md", "sha256": "auto", "collected_at": "2026-09-11"}
+  ]
+}

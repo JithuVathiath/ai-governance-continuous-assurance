@@ -1,0 +1,19 @@
+{
+  "system_id": "talent-match-assistant",
+  "version": "1.0",
+  "items": [
+    {"id": "EV-001", "type": "accountability_matrix", "title": "Accountability Matrix", "status": "approved", "owner": "AI Governance Council", "artifact": "evidence/governance.md", "sha256": "auto", "collected_at": "2026-08-10"},
+    {"id": "EV-002", "type": "impact_assessment", "title": "Applicant Impact Assessment", "status": "approved", "owner": "Responsible AI Lead", "artifact": "evidence/impact.md", "sha256": "auto", "collected_at": "2026-08-12"},
+    {"id": "EV-003", "type": "risk_assessment", "title": "Initial Risk Assessment", "status": "approved", "owner": "Enterprise Risk", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-08-14"},
+    {"id": "EV-004", "type": "risk_treatment", "title": "Risk Treatment Plan", "status": "draft", "owner": "Product Owner", "artifact": "evidence/treatment.md", "sha256": "auto", "collected_at": "2026-09-01"},
+    {"id": "EV-005", "type": "data_card", "title": "Training Data Card", "status": "approved", "owner": "Data Steward", "artifact": "evidence/data-card.md", "sha256": "auto", "collected_at": "2026-08-20"},
+    {"id": "EV-006", "type": "bias_test", "title": "Subgroup Evaluation", "status": "in-review", "owner": "Model Validation", "artifact": "evidence/testing.md", "sha256": "auto", "collected_at": "2026-09-08"},
+    {"id": "EV-007", "type": "performance_test", "title": "Performance Evaluation", "status": "approved", "owner": "Model Validation", "artifact": "evidence/testing.md", "sha256": "auto", "collected_at": "2026-08-28"},
+    {"id": "EV-008", "type": "model_card", "title": "Model Card", "status": "approved", "owner": "ML Engineering", "artifact": "evidence/model-card.md", "sha256": "auto", "collected_at": "2026-08-25"},
+    {"id": "EV-009", "type": "logging_specification", "title": "Decision Log Specification", "status": "draft", "owner": "Platform Engineering", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-09-05"},
+    {"id": "EV-010", "type": "human_oversight_plan", "title": "Recruiter Oversight Procedure", "status": "approved", "owner": "Recruiting Operations", "artifact": "evidence/oversight.md", "sha256": "auto", "collected_at": "2026-08-30"},
+    {"id": "EV-011", "type": "security_assessment", "title": "Security Assessment", "status": "approved", "owner": "Information Security", "artifact": "evidence/security.md", "sha256": "auto", "collected_at": "2025-05-10", "valid_until": "2026-05-10"},
+    {"id": "EV-012", "type": "monitoring_plan", "title": "Production Monitoring Plan", "status": "draft", "owner": "ML Operations", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-09-05"},
+    {"id": "EV-013", "type": "change_record", "title": "Release Change Record", "status": "approved", "owner": "Change Advisory Board", "artifact": "evidence/change-record.md", "sha256": "auto", "collected_at": "2026-09-07"}
+  ]
+}

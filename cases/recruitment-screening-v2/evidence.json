@@ -1,0 +1,21 @@
+{
+  "system_id": "talent-match-assistant",
+  "version": "2.0",
+  "items": [
+    {"id": "EV2-001", "type": "accountability_matrix", "title": "Updated Accountability Matrix", "status": "approved", "owner": "AI Governance Council", "artifact": "evidence/governance.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "EV2-002", "type": "impact_assessment", "title": "Generative Feature Impact Addendum", "status": "in-review", "owner": "Responsible AI Lead", "artifact": "evidence/impact.md", "sha256": "auto", "collected_at": "2026-09-12"},
+    {"id": "EV2-003", "type": "risk_assessment", "title": "Version 2 Risk Assessment", "status": "approved", "owner": "Enterprise Risk", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "EV2-004", "type": "risk_treatment", "title": "Approved Risk Treatment Plan", "status": "approved", "owner": "AI Governance Council", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "EV2-005", "type": "data_card", "title": "Versioned Data Card", "status": "approved", "owner": "Data Steward", "artifact": "evidence/data-and-tests.md", "sha256": "auto", "collected_at": "2026-09-09"},
+    {"id": "EV2-006", "type": "bias_test", "title": "Approved Subgroup Evaluation", "status": "approved", "owner": "Model Validation", "artifact": "evidence/data-and-tests.md", "sha256": "auto", "collected_at": "2026-09-11"},
+    {"id": "EV2-007", "type": "performance_test", "title": "Version 2 Performance Evaluation", "status": "approved", "owner": "Model Validation", "artifact": "evidence/data-and-tests.md", "sha256": "auto", "collected_at": "2026-09-11"},
+    {"id": "EV2-008", "type": "technical_documentation", "title": "Version 2 Technical File", "status": "approved", "owner": "ML Engineering", "artifact": "evidence/technical-file.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "EV2-009", "type": "logging_specification", "title": "Decision and Prompt Log Specification", "status": "approved", "owner": "Platform Engineering", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-09-08"},
+    {"id": "EV2-010", "type": "instructions_for_use", "title": "Recruiter Instructions", "status": "approved", "owner": "Recruiting Operations", "artifact": "evidence/oversight.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "EV2-011", "type": "human_oversight_plan", "title": "Updated Human Oversight Procedure", "status": "approved", "owner": "Recruiting Operations", "artifact": "evidence/oversight.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "EV2-012", "type": "security_assessment", "title": "Current Security Assessment", "status": "approved", "owner": "Information Security", "artifact": "evidence/security.md", "sha256": "auto", "collected_at": "2026-09-10", "valid_until": "2027-09-10"},
+    {"id": "EV2-013", "type": "monitoring_plan", "title": "Production Monitoring and Response", "status": "approved", "owner": "ML Operations", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "EV2-014", "type": "red_team_report", "title": "Explanation Red-Team Report", "status": "approved", "owner": "AI Safety", "artifact": "evidence/red-team.md", "sha256": "auto", "collected_at": "2026-09-11"},
+    {"id": "EV2-015", "type": "supplier_assessment", "title": "Foundation Model Supplier Review", "status": "approved", "owner": "Third-Party Risk", "artifact": "evidence/supplier.md", "sha256": "auto", "collected_at": "2026-09-09"}
+  ]
+}

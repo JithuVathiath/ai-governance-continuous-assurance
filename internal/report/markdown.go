@@ -14,10 +14,10 @@ import (
 func Write(path string, assessment domain.Assessment) error {
 	var builder strings.Builder
 	builder.WriteString("# Aegis Continuous-Assurance Report\n\n")
-	fmt.Fprintf(&builder, "**System:** %s (`%s`, version `%s`)  \n", assessment.System.Name, assessment.System.ID, assessment.System.Version)
-	fmt.Fprintf(&builder, "**Assessment:** `%s`  \n", assessment.AssessmentID)
-	fmt.Fprintf(&builder, "**Generated:** %s  \n", assessment.GeneratedAt)
-	fmt.Fprintf(&builder, "**Decision gate:** **%s**\n\n", strings.ToUpper(assessment.Summary.Decision))
+	fmt.Fprintf(&builder, "- **System:** %s (`%s`, version `%s`)\n", assessment.System.Name, assessment.System.ID, assessment.System.Version)
+	fmt.Fprintf(&builder, "- **Assessment:** `%s`\n", assessment.AssessmentID)
+	fmt.Fprintf(&builder, "- **Generated:** %s\n", assessment.GeneratedAt)
+	fmt.Fprintf(&builder, "- **Decision gate:** **%s**\n\n", strings.ToUpper(assessment.Summary.Decision))
 
 	builder.WriteString("> **Important:** " + assessment.Disclaimer + "\n\n")
 	builder.WriteString("## Executive Summary\n\n")

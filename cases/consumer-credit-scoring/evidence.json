@@ -1,0 +1,20 @@
+{
+  "system_id": "credit-access-score",
+  "version": "3.2",
+  "items": [
+    {"id": "CR-001", "type": "ai_policy", "title": "Credit AI Governance Policy", "status": "approved", "owner": "Model Risk Committee", "artifact": "evidence/governance.md", "sha256": "auto", "collected_at": "2026-07-01"},
+    {"id": "CR-002", "type": "impact_assessment", "title": "Borrower Impact Assessment", "status": "approved", "owner": "Consumer Duty Lead", "artifact": "evidence/impact.md", "sha256": "auto", "collected_at": "2026-08-01"},
+    {"id": "CR-003", "type": "risk_assessment", "title": "Model Risk Assessment", "status": "approved", "owner": "Independent Model Risk", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-08-15"},
+    {"id": "CR-004", "type": "risk_treatment", "title": "Risk Treatment Record", "status": "approved", "owner": "Retail Credit Risk", "artifact": "evidence/risk.md", "sha256": "auto", "collected_at": "2026-08-15"},
+    {"id": "CR-005", "type": "data_card", "title": "Credit Data Card", "status": "approved", "owner": "Credit Data Office", "artifact": "evidence/data.md", "sha256": "auto", "collected_at": "2026-08-20"},
+    {"id": "CR-006", "type": "bias_test", "title": "Fair-Lending Validation", "status": "in-review", "owner": "Independent Model Risk", "artifact": "evidence/validation.md", "sha256": "auto", "collected_at": "2026-09-12"},
+    {"id": "CR-007", "type": "performance_test", "title": "Performance and Calibration Test", "status": "approved", "owner": "Independent Model Risk", "artifact": "evidence/validation.md", "sha256": "auto", "collected_at": "2026-09-10"},
+    {"id": "CR-008", "type": "technical_documentation", "title": "Technical Model File", "status": "approved", "owner": "Model Development", "artifact": "evidence/technical.md", "sha256": "auto", "collected_at": "2026-08-30"},
+    {"id": "CR-009", "type": "audit_log_sample", "title": "Decision Audit Sample", "status": "approved", "owner": "Credit Operations", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-09-05"},
+    {"id": "CR-010", "type": "instructions_for_use", "title": "Underwriter Operating Guide", "status": "approved", "owner": "Credit Operations", "artifact": "evidence/oversight.md", "sha256": "auto", "collected_at": "2026-08-25"},
+    {"id": "CR-011", "type": "appeals_process", "title": "Manual Review and Appeal Process", "status": "approved", "owner": "Customer Outcomes", "artifact": "evidence/oversight.md", "sha256": "auto", "collected_at": "2026-08-25"},
+    {"id": "CR-012", "type": "security_assessment", "title": "Security and Resilience Review", "status": "approved", "owner": "Information Security", "artifact": "evidence/security.md", "sha256": "auto", "collected_at": "2026-08-28", "valid_until": "2027-08-28"},
+    {"id": "CR-013", "type": "monitoring_plan", "title": "Outcome Monitoring Plan", "status": "approved", "owner": "Model Monitoring", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-09-01"},
+    {"id": "CR-014", "type": "incident_response", "title": "Model Incident Playbook", "status": "approved", "owner": "Operational Risk", "artifact": "evidence/operations.md", "sha256": "auto", "collected_at": "2026-09-01"}
+  ]
+}

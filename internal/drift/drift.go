@@ -80,9 +80,9 @@ func Compare(before, after domain.Assessment) (domain.DriftReport, error) {
 func WriteMarkdown(path string, report domain.DriftReport) error {
 	var builder strings.Builder
 	fmt.Fprintf(&builder, "# Aegis Control-Drift Report\n\n")
-	fmt.Fprintf(&builder, "**System:** `%s`  \n", report.SystemID)
-	fmt.Fprintf(&builder, "**Assessment transition:** `%s` → `%s`  \n", report.BeforeAssessment, report.AfterAssessment)
-	fmt.Fprintf(&builder, "**Risk routing:** `%s` → `%s`\n\n", report.BeforeTier, report.AfterTier)
+	fmt.Fprintf(&builder, "- **System:** `%s`\n", report.SystemID)
+	fmt.Fprintf(&builder, "- **Assessment transition:** `%s` → `%s`\n", report.BeforeAssessment, report.AfterAssessment)
+	fmt.Fprintf(&builder, "- **Risk routing:** `%s` → `%s`\n\n", report.BeforeTier, report.AfterTier)
 	fmt.Fprintf(&builder, "## Change Summary\n\n")
 	fmt.Fprintf(&builder, "| Newly Applicable | Resolved | Regressed | Other Changes |\n")
 	fmt.Fprintf(&builder, "| ---: | ---: | ---: | ---: |\n")

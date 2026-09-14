@@ -1,0 +1,18 @@
+{
+  "id": "enterprise-foundation-model-gateway",
+  "name": "Enterprise Foundation Model Gateway",
+  "version": "0.8",
+  "owner": "Technology Strategy",
+  "role": "deployer",
+  "domain": "technology_procurement",
+  "lifecycle_stage": "design",
+  "intended_purpose": "Evaluate and govern access to third-party foundation models before downstream use cases are approved.",
+  "decision_impact": "Controls technology selection; it does not make decisions about individuals.",
+  "geographies": ["EU", "UK", "US"],
+  "capabilities": ["foundation_model_dependency", "model_routing"],
+  "risk_factors": ["supplier_concentration", "model_change", "data_transfer"],
+  "data_sensitivity": ["configuration_metadata"],
+  "affected_groups": ["employees", "application owners"],
+  "declared_risk_tier": "minimal",
+  "vendor": "Multiple Candidate Suppliers"
+}
