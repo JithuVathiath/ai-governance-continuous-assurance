@@ -1,0 +1,106 @@
+{
+  "id": "eu-ai-act-2026",
+  "framework": "EU AI Act",
+  "version": "2026.09",
+  "as_of": "2026-09-13",
+  "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+  "disclaimer": "Public-interest implementation aid. This pack is not legal advice and does not reproduce or certify the law.",
+  "rules": [
+    {
+      "id": "AIA-04",
+      "title": "Prohibited-Practice Escalation",
+      "description": "Route declared prohibited-practice indicators to qualified review before use.",
+      "source_ref": "Article 5",
+      "severity": "critical",
+      "applicable_when": {"risk_tiers": ["prohibited-review"]},
+      "requirements": [{"id": "legal-review", "title": "Documented legal review", "evidence_types": ["legal_review"], "minimum": 1}]
+    },
+    {
+      "id": "AIA-09",
+      "title": "Lifecycle Risk Management",
+      "description": "Maintain an iterative risk-management record for high-impact AI.",
+      "source_ref": "Article 9",
+      "severity": "high",
+      "applicable_when": {"risk_tiers": ["high"]},
+      "requirements": [{"id": "risk-record", "title": "Approved risk assessment and treatment", "evidence_types": ["risk_assessment", "risk_treatment"], "minimum": 2}]
+    },
+    {
+      "id": "AIA-10",
+      "title": "Data Governance",
+      "description": "Evidence data provenance, relevance, quality, and bias controls.",
+      "source_ref": "Article 10",
+      "severity": "high",
+      "applicable_when": {"risk_tiers": ["high"]},
+      "requirements": [{"id": "data-governance", "title": "Data governance evidence", "evidence_types": ["data_card", "data_quality_review", "bias_test"], "minimum": 2}]
+    },
+    {
+      "id": "AIA-11",
+      "title": "Technical Documentation",
+      "description": "Keep reviewable technical documentation aligned to the deployed version.",
+      "source_ref": "Article 11",
+      "severity": "high",
+      "applicable_when": {"risk_tiers": ["high"]},
+      "requirements": [{"id": "technical-file", "title": "Approved model and system documentation", "evidence_types": ["model_card", "technical_documentation"], "minimum": 1}]
+    },
+    {
+      "id": "AIA-12",
+      "title": "Event Logging",
+      "description": "Demonstrate traceable logging suitable for post-event review.",
+      "source_ref": "Article 12",
+      "severity": "high",
+      "applicable_when": {"risk_tiers": ["high"]},
+      "requirements": [{"id": "logging", "title": "Logging design and sample", "evidence_types": ["logging_specification", "audit_log_sample"], "minimum": 1}]
+    },
+    {
+      "id": "AIA-13",
+      "title": "Instructions and Transparency",
+      "description": "Provide understandable operating limitations and intended-use information.",
+      "source_ref": "Article 13",
+      "severity": "high",
+      "applicable_when": {"risk_tiers": ["high"]},
+      "requirements": [{"id": "instructions", "title": "Approved user instructions", "evidence_types": ["instructions_for_use", "transparency_notice"], "minimum": 1}]
+    },
+    {
+      "id": "AIA-14",
+      "title": "Human Oversight",
+      "description": "Define accountable intervention, override, and escalation mechanisms.",
+      "source_ref": "Article 14",
+      "severity": "high",
+      "applicable_when": {"risk_tiers": ["high"]},
+      "requirements": [{"id": "oversight", "title": "Human-oversight procedure", "evidence_types": ["human_oversight_plan", "appeals_process"], "minimum": 1}]
+    },
+    {
+      "id": "AIA-15",
+      "title": "Accuracy, Robustness, and Cybersecurity",
+      "description": "Evidence performance, resilience, and security for the deployed context.",
+      "source_ref": "Article 15",
+      "severity": "high",
+      "applicable_when": {"risk_tiers": ["high"]},
+      "requirements": [
+        {"id": "performance", "title": "Performance and robustness evaluation", "evidence_types": ["performance_test", "robustness_test"], "minimum": 1},
+        {"id": "security", "title": "Current security assessment", "evidence_types": ["security_assessment"], "minimum": 1}
+      ]
+    },
+    {
+      "id": "AIA-50-I",
+      "title": "AI Interaction Transparency",
+      "description": "Disclose AI interaction where the use case requires it.",
+      "source_ref": "Article 50",
+      "severity": "medium",
+      "applicable_when": {"capabilities": ["conversational_agent"]},
+      "requirements": [{"id": "disclosure", "title": "User-facing AI disclosure", "evidence_types": ["transparency_notice"], "minimum": 1}]
+    },
+    {
+      "id": "AIA-50-C",
+      "title": "AI-Generated Content Provenance",
+      "description": "Preserve disclosure and provenance for generated content where the use case requires it.",
+      "source_ref": "Article 50",
+      "severity": "medium",
+      "applicable_when": {"capabilities": ["content_generation"]},
+      "requirements": [
+        {"id": "content-disclosure", "title": "AI-generated content disclosure", "evidence_types": ["transparency_notice"], "minimum": 1},
+        {"id": "content-provenance", "title": "Generated-content provenance", "evidence_types": ["content_provenance"], "minimum": 1}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "iso-42001-alignment",
+  "framework": "ISO/IEC 42001 Alignment",
+  "version": "2023-high-level",
+  "as_of": "2026-09-13",
+  "source_url": "https://www.iso.org/standard/42001",
+  "disclaimer": "High-level, original alignment aid only. It does not reproduce ISO text, replace the standard, confer certification, or assess conformity.",
+  "rules": [
+    {
+      "id": "AIMS-LEAD",
+      "title": "AI Policy and Accountability",
+      "description": "Demonstrate approved direction and accountable ownership for the AI management system.",
+      "source_ref": "High-level leadership alignment",
+      "severity": "high",
+      "applicable_when": {},
+      "requirements": [{"id": "leadership", "title": "Policy and accountability", "evidence_types": ["ai_policy", "accountability_matrix"], "minimum": 1}]
+    },
+    {
+      "id": "AIMS-RISK",
+      "title": "Impact and Risk Process",
+      "description": "Operate a documented impact, risk, and treatment process.",
+      "source_ref": "High-level planning alignment",
+      "severity": "high",
+      "applicable_when": {},
+      "requirements": [{"id": "risk-process", "title": "Impact, risk, and treatment records", "evidence_types": ["impact_assessment", "risk_assessment", "risk_treatment"], "minimum": 2}]
+    },
+    {
+      "id": "AIMS-LIFE",
+      "title": "Lifecycle and Supplier Governance",
+      "description": "Control lifecycle changes and external AI dependencies.",
+      "source_ref": "High-level operational alignment",
+      "severity": "medium",
+      "applicable_when": {},
+      "requirements": [{"id": "lifecycle", "title": "Lifecycle or supplier controls", "evidence_types": ["change_record", "supplier_assessment", "technical_documentation"], "minimum": 1}]
+    },
+    {
+      "id": "AIMS-IMPROVE",
+      "title": "Monitoring and Continual Improvement",
+      "description": "Monitor outcomes and document corrective improvement.",
+      "source_ref": "High-level performance and improvement alignment",
+      "severity": "medium",
+      "applicable_when": {"lifecycle_stages": ["pilot", "production", "monitoring"]},
+      "requirements": [{"id": "improvement", "title": "Monitoring and improvement evidence", "evidence_types": ["monitoring_plan", "corrective_action", "incident_response"], "minimum": 1}]
+    }
+  ]
+}
