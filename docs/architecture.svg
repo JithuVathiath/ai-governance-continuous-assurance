@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Aegis continuous-assurance architecture</title>
+  <description id="description">System declaration and evidence enter the Aegis engine, which applies risk routing and versioned policy packs, then produces a report, evidence graph, SARIF, drift analysis, and tamper-evident ledger.</description>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#102c46"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".28"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7dd3fc"/></marker>
+  </defs>
+  <rect width="1200" height="620" rx="28" fill="url(#background)"/>
+  <text x="60" y="72" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="34" font-weight="700">Aegis Continuous Assurance</text>
+  <text x="60" y="106" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="17">From governance declarations to independently reviewable evidence</text>
+
+  <g filter="url(#shadow)" font-family="Inter,system-ui,sans-serif">
+    <rect x="60" y="175" width="245" height="108" rx="18" fill="#12263f" stroke="#38bdf8" stroke-width="2"/>
+    <text x="84" y="210" fill="#7dd3fc" font-size="14" font-weight="700">INPUT 01</text>
+    <text x="84" y="243" fill="#f8fafc" font-size="21" font-weight="650">System Declaration</text>
+    <text x="84" y="269" fill="#94a3b8" font-size="14">purpose · impact · context</text>
+
+    <rect x="60" y="327" width="245" height="108" rx="18" fill="#12263f" stroke="#34d399" stroke-width="2"/>
+    <text x="84" y="362" fill="#6ee7b7" font-size="14" font-weight="700">INPUT 02</text>
+    <text x="84" y="395" fill="#f8fafc" font-size="21" font-weight="650">Evidence Bundle</text>
+    <text x="84" y="421" fill="#94a3b8" font-size="14">status · owner · SHA-256</text>
+
+    <rect x="402" y="184" width="340" height="242" rx="24" fill="#0d2138" stroke="url(#accent)" stroke-width="3"/>
+    <text x="438" y="227" fill="#67e8f9" font-size="15" font-weight="700">DETERMINISTIC ENGINE</text>
+    <text x="438" y="269" fill="#f8fafc" font-size="28" font-weight="750">Policy-as-Data</text>
+    <line x1="438" y1="290" x2="706" y2="290" stroke="#29445f"/>
+    <text x="438" y="326" fill="#cbd5e1" font-size="16">Explainable risk routing</text>
+    <text x="438" y="357" fill="#cbd5e1" font-size="16">Versioned control evaluation</text>
+    <text x="438" y="388" fill="#cbd5e1" font-size="16">Evidence integrity + lineage</text>
+
+    <rect x="838" y="148" width="302" height="70" rx="16" fill="#12263f" stroke="#7dd3fc"/>
+    <text x="862" y="178" fill="#f8fafc" font-size="18" font-weight="650">Executive Report + JSON</text>
+    <text x="862" y="201" fill="#94a3b8" font-size="13">decision gate and control matrix</text>
+
+    <rect x="838" y="238" width="302" height="70" rx="16" fill="#12263f" stroke="#7dd3fc"/>
+    <text x="862" y="268" fill="#f8fafc" font-size="18" font-weight="650">Typed Evidence Graph</text>
+    <text x="862" y="291" fill="#94a3b8" font-size="13">source → control → evidence → finding</text>
+
+    <rect x="838" y="328" width="302" height="70" rx="16" fill="#12263f" stroke="#34d399"/>
+    <text x="862" y="358" fill="#f8fafc" font-size="18" font-weight="650">SARIF + Drift Replay</text>
+    <text x="862" y="381" fill="#94a3b8" font-size="13">engineering workflow integration</text>
+
+    <rect x="838" y="418" width="302" height="70" rx="16" fill="#12263f" stroke="#34d399"/>
+    <text x="862" y="448" fill="#f8fafc" font-size="18" font-weight="650">Tamper-Evident Ledger</text>
+    <text x="862" y="471" fill="#94a3b8" font-size="13">SQLite · chained event hashes</text>
+  </g>
+
+  <g stroke="#7dd3fc" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <path d="M305 229 C350 229 356 252 402 252"/>
+    <path d="M305 381 C350 381 356 359 402 359"/>
+    <path d="M742 260 C790 260 790 183 838 183"/>
+    <path d="M742 292 C790 292 790 273 838 273"/>
+    <path d="M742 324 C790 324 790 363 838 363"/>
+    <path d="M742 356 C790 356 790 453 838 453"/>
+  </g>
+
+  <g font-family="Inter,system-ui,sans-serif">
+    <text x="60" y="541" fill="#64748b" font-size="13">POLICY SOURCES</text>
+    <rect x="60" y="558" width="165" height="34" rx="17" fill="#19324e"/><text x="83" y="581" fill="#cbd5e1" font-size="14">EU AI Act</text>
+    <rect x="240" y="558" width="165" height="34" rx="17" fill="#19324e"/><text x="267" y="581" fill="#cbd5e1" font-size="14">NIST AI RMF</text>
+    <rect x="420" y="558" width="260" height="34" rx="17" fill="#19324e"/><text x="448" y="581" fill="#cbd5e1" font-size="14">ISO/IEC 42001 Alignment</text>
+    <text x="838" y="568" fill="#6ee7b7" font-size="15" font-weight="650">Evidence readiness ≠ legal compliance</text>
+  </g>
+</svg>

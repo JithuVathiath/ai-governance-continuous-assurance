@@ -1,0 +1,73 @@
+name: Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Test, Audit, and Reproduce
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+
+      - name: Install Go
+        uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+          cache-dependency-path: go.sum
+
+      - name: Verify dependencies
+        run: go mod verify
+
+      - name: Check formatting
+        run: test -z "$(gofmt -l cmd internal)"
+
+      - name: Check demo script
+        run: sh -n scripts/build-demo.sh
+
+      - name: Run static analysis
+        run: go vet ./...
+
+      - name: Run security and vulnerability scans
+        run: make security
+
+      - name: Run race-enabled tests and enforce coverage
+        run: make coverage
+
+      - name: Rebuild assurance evidence
+        run: make demo
+
+      - name: Confirm committed outputs are reproducible
+        run: git diff --exit-code -- artifacts/public reports
+
+      - name: Verify demonstration audit ledger
+        run: bin/aegis verify-ledger --ledger artifacts/run/aegis-ledger.db
+
+      - name: Build static executable
+        run: CGO_ENABLED=0 go build -trimpath -o bin/aegis-static ./cmd/aegis
+
+  container:
+    name: Build Container
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+
+      - name: Build image
+        run: docker build --tag aegis:test .
+
+      - name: Smoke test image
+        run: docker run --rm aegis:test version

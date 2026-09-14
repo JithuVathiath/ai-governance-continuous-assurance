@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use Aegis in research or teaching, please cite this software."
+title: "Aegis: AI Governance Continuous Assurance"
+version: 0.1.0
+date-released: 2026-09-14
+type: software
+authors:
+  - family-names: "Biju"
+    given-names: "Jithu Vathiath"
+repository-code: "https://github.com/JithuVathiath/ai-governance-continuous-assurance"
+license: MIT
+keywords:
+  - artificial intelligence governance
+  - responsible AI
+  - continuous assurance
+  - model risk management
+  - EU AI Act
+  - NIST AI RMF
+  - ISO IEC 42001

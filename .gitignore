@@ -1,0 +1,12 @@
+.DS_Store
+bin/
+artifacts/run/
+coverage.out
+*.db
+*.db-shm
+*.db-wal
+assessment.json
+assessment.md
+assessment.sarif
+drift.json
+drift.md
